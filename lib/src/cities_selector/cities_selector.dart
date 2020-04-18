@@ -419,6 +419,7 @@ class _CitiesSelectorState extends State<CitiesSelector> {
             widget.title,
           ),
           centerTitle: true,
+          elevation: 0,
         ),
         body: SafeArea(
           bottom: true,
