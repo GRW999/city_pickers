@@ -9,6 +9,7 @@
 
 import 'dart:async';
 
+import 'package:city_pickers/src/widget/flutter_app_bar.dart';
 import 'package:flutter/material.dart';
 
 import '../../meta/province.dart';
@@ -413,10 +414,12 @@ class _CitiesSelectorState extends State<CitiesSelector> {
     return Scaffold(
         backgroundColor: Colors.white,
         resizeToAvoidBottomPadding: false,
-        appBar: AppBar(
-            title: Text(
-          widget.title,
-        )),
+        appBar: FlutterAppBar(
+          title: Text(
+            widget.title,
+          ),
+          centerTitle: true,
+        ),
         body: SafeArea(
           bottom: true,
           child: Column(
